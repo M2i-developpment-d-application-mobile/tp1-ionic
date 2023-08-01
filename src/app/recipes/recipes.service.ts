@@ -37,5 +37,11 @@ export class RecipesService { // IOC
     })
   }
 
+  deleteRecipe(recipeId: string){
+    this.recipes = this.recipes.filter(recipe => {
+      return recipe.id !== recipeId;
+    })
+  }
+
   constructor() { }
 }
