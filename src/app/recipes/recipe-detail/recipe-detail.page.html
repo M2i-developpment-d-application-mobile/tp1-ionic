@@ -1,5 +1,5 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
+  <ion-toolbar color="primary">
     <ion-title>{{ loadedRecipe?.title }}</ion-title>
   </ion-toolbar>
 </ion-header>
@@ -7,13 +7,13 @@
 <ion-content [fullscreen]="true">
   <ion-grid>
     <ion-row>
-      <ion-col>
+      <ion-col class="ion-no-padding">
         <ion-img [src]="loadedRecipe?.imageUrl"></ion-img>
       </ion-col>
     </ion-row>
     <ion-row>
       <ion-col>
-        <h1>{{ loadedRecipe?.title }}</h1>
+        <h1 class="ion-text-center" >{{ loadedRecipe?.title }}</h1>
       </ion-col>
     </ion-row>
     <ion-row>
